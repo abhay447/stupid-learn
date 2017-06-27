@@ -1,0 +1,151 @@
+\hypertarget{classLogisticClassifier}{}\section{Logistic\+Classifier Class Reference}
+\label{classLogisticClassifier}\index{Logistic\+Classifier@{Logistic\+Classifier}}
+
+
+A Class for Logistic Regression.  
+
+
+
+
+{\ttfamily \#include $<$Logistic\+Classifier.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLogisticClassifier_ad09081f432b7290fd38f82e2b63331ad}{Logistic\+Classifier} (mat X, mat Y, double alpha, double thresh=0.\+06, int num\+\_\+iter=300000)
+\begin{DoxyCompactList}\small\item\em Constructor for the class. \end{DoxyCompactList}\item 
+void \hyperlink{classLogisticClassifier_a77c2b290fe81dbbcf4f34c4ca3568681}{train} (float ttr=0.\+75)
+\begin{DoxyCompactList}\small\item\em Train the A\+NN. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_ad2a4beb7b3c5dfa7ac9aed38db89a692}\label{classLogisticClassifier_ad2a4beb7b3c5dfa7ac9aed38db89a692}} 
+void \hyperlink{classLogisticClassifier_ad2a4beb7b3c5dfa7ac9aed38db89a692}{test} ()
+\begin{DoxyCompactList}\small\item\em Test the A\+NN on the test data as per Train\+:Test ratio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a88992ed0aacc53c2613cb2dfcf584286}\label{classLogisticClassifier_a88992ed0aacc53c2613cb2dfcf584286}} 
+mat \hyperlink{classLogisticClassifier_a88992ed0aacc53c2613cb2dfcf584286}{simulate} (mat X)
+\begin{DoxyCompactList}\small\item\em Predict output value for a new row of input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_ab529f1b73d5274d0b5fdea648e2f98cc}\label{classLogisticClassifier_ab529f1b73d5274d0b5fdea648e2f98cc}} 
+void \hyperlink{classLogisticClassifier_ab529f1b73d5274d0b5fdea648e2f98cc}{set\+InputX} (mat X)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a0b4ea13febdb17c3f9a71a1aafb71f18}\label{classLogisticClassifier_a0b4ea13febdb17c3f9a71a1aafb71f18}} 
+void \hyperlink{classLogisticClassifier_a0b4ea13febdb17c3f9a71a1aafb71f18}{set\+InputY} (mat Y)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a29006b9ade73e677700dcea81547571f}\label{classLogisticClassifier_a29006b9ade73e677700dcea81547571f}} 
+void \hyperlink{classLogisticClassifier_a29006b9ade73e677700dcea81547571f}{set\+Params} (mat B)
+\begin{DoxyCompactList}\small\item\em setter for params(weights) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_ad50303db626a6a20c6dc0f8295ba0017}\label{classLogisticClassifier_ad50303db626a6a20c6dc0f8295ba0017}} 
+void \hyperlink{classLogisticClassifier_ad50303db626a6a20c6dc0f8295ba0017}{set\+Rate} (double alpha)
+\begin{DoxyCompactList}\small\item\em setter for learning rate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a6f40d57c448513ce1327b7b1654af801}\label{classLogisticClassifier_a6f40d57c448513ce1327b7b1654af801}} 
+void \hyperlink{classLogisticClassifier_a6f40d57c448513ce1327b7b1654af801}{set\+Convergence} (double thresh)
+\begin{DoxyCompactList}\small\item\em setter for convergence threshold of weights \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a4f9077f908405e3c647e5119df3c696e}\label{classLogisticClassifier_a4f9077f908405e3c647e5119df3c696e}} 
+void \hyperlink{classLogisticClassifier_a4f9077f908405e3c647e5119df3c696e}{set\+Iterations} (int num\+\_\+iter)
+\begin{DoxyCompactList}\small\item\em setter for max number of iterations \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_abfc355cc24d80bfac1f427e0380087a5}\label{classLogisticClassifier_abfc355cc24d80bfac1f427e0380087a5}} 
+mat \hyperlink{classLogisticClassifier_abfc355cc24d80bfac1f427e0380087a5}{get\+InputX} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a4d0eda55e9d87ad5a5457cf0cbb396e3}\label{classLogisticClassifier_a4d0eda55e9d87ad5a5457cf0cbb396e3}} 
+mat \hyperlink{classLogisticClassifier_a4d0eda55e9d87ad5a5457cf0cbb396e3}{get\+InputY} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a8ac71da27a24697b03066a642b6f344f}\label{classLogisticClassifier_a8ac71da27a24697b03066a642b6f344f}} 
+mat \hyperlink{classLogisticClassifier_a8ac71da27a24697b03066a642b6f344f}{get\+Params} ()
+\begin{DoxyCompactList}\small\item\em getter for weights \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_af2fa50bbb8773306352a0eafe35187b0}\label{classLogisticClassifier_af2fa50bbb8773306352a0eafe35187b0}} 
+double \hyperlink{classLogisticClassifier_af2fa50bbb8773306352a0eafe35187b0}{get\+Rate} ()
+\begin{DoxyCompactList}\small\item\em getter for learning rate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a0f356a56d31bbf1d6839c6f51b35d72c}\label{classLogisticClassifier_a0f356a56d31bbf1d6839c6f51b35d72c}} 
+double \hyperlink{classLogisticClassifier_a0f356a56d31bbf1d6839c6f51b35d72c}{get\+Convergence} ()
+\begin{DoxyCompactList}\small\item\em getter for convergence threshold \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a5bfb163c1f955e4192d6d9624b3cf632}\label{classLogisticClassifier_a5bfb163c1f955e4192d6d9624b3cf632}} 
+int \hyperlink{classLogisticClassifier_a5bfb163c1f955e4192d6d9624b3cf632}{get\+Iterations} ()
+\begin{DoxyCompactList}\small\item\em getter for max number of iterations \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogisticClassifier_a2010acc9c0843ee6f5c306622ec30b12}\label{classLogisticClassifier_a2010acc9c0843ee6f5c306622ec30b12}} 
+mat \hyperlink{classLogisticClassifier_a2010acc9c0843ee6f5c306622ec30b12}{add\+Const\+Col} (mat X)
+\begin{DoxyCompactList}\small\item\em adds a bias column(of ones) to all rows of input \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_aa76704935e6335c625ba3792a0452666}\label{classLogisticClassifier_aa76704935e6335c625ba3792a0452666}} 
+double \hyperlink{classLogisticClassifier_aa76704935e6335c625ba3792a0452666}{hypo} (int i)
+\begin{DoxyCompactList}\small\item\em Hypothesis Function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a75dda261a64ee2dff0e37b01d7cc0de7}\label{classLogisticClassifier_a75dda261a64ee2dff0e37b01d7cc0de7}} 
+void \hyperlink{classLogisticClassifier_a75dda261a64ee2dff0e37b01d7cc0de7}{gradient\+Descent} ()
+\begin{DoxyCompactList}\small\item\em Gradient Descent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogisticClassifier_ad3f18efeaafc8fd284963ac2b38f5d07}\label{classLogisticClassifier_ad3f18efeaafc8fd284963ac2b38f5d07}} 
+mat \hyperlink{classLogisticClassifier_ad3f18efeaafc8fd284963ac2b38f5d07}{input\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Feature values of dataset. Each row represnts a training example. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_ac9ce18c07d568b2926b12cfe410f5e82}\label{classLogisticClassifier_ac9ce18c07d568b2926b12cfe410f5e82}} 
+mat \hyperlink{classLogisticClassifier_ac9ce18c07d568b2926b12cfe410f5e82}{input\+\_\+y}
+\begin{DoxyCompactList}\small\item\em Output values of dataset. Each row represnts a training example. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a66fc430960d74c35485aec08838592ba}\label{classLogisticClassifier_a66fc430960d74c35485aec08838592ba}} 
+mat \hyperlink{classLogisticClassifier_a66fc430960d74c35485aec08838592ba}{params}
+\begin{DoxyCompactList}\small\item\em Row vector of weights from all features to output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_ad76ca658c4f90baacc5f9fe00172c339}\label{classLogisticClassifier_ad76ca658c4f90baacc5f9fe00172c339}} 
+double \hyperlink{classLogisticClassifier_ad76ca658c4f90baacc5f9fe00172c339}{rate}
+\begin{DoxyCompactList}\small\item\em Learning rate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_adccf9527c27e9c1fedc3702246fad6a6}\label{classLogisticClassifier_adccf9527c27e9c1fedc3702246fad6a6}} 
+double \hyperlink{classLogisticClassifier_adccf9527c27e9c1fedc3702246fad6a6}{convergence}
+\begin{DoxyCompactList}\small\item\em Convergence threshold for weights. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a2bd866ae00c99496357eded1f3349419}\label{classLogisticClassifier_a2bd866ae00c99496357eded1f3349419}} 
+int \hyperlink{classLogisticClassifier_a2bd866ae00c99496357eded1f3349419}{max\+\_\+iterations}
+\begin{DoxyCompactList}\small\item\em Maximum number of iterations while training. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLogisticClassifier_a1102d221b2c6636c05444af54470ffea}\label{classLogisticClassifier_a1102d221b2c6636c05444af54470ffea}} 
+float \hyperlink{classLogisticClassifier_a1102d221b2c6636c05444af54470ffea}{T\+TR}
+\begin{DoxyCompactList}\small\item\em Train\+:Test ratio to split dataset into training and test set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Class for Logistic Regression. 
+
+Output is a sigmoid of linear weighted combination of parameters. The process is terminated on convergence of weights or after a fixed number of iterations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogisticClassifier_ad09081f432b7290fd38f82e2b63331ad}\label{classLogisticClassifier_ad09081f432b7290fd38f82e2b63331ad}} 
+\index{Logistic\+Classifier@{Logistic\+Classifier}!Logistic\+Classifier@{Logistic\+Classifier}}
+\index{Logistic\+Classifier@{Logistic\+Classifier}!Logistic\+Classifier@{Logistic\+Classifier}}
+\subsubsection{\texorpdfstring{Logistic\+Classifier()}{LogisticClassifier()}}
+{\footnotesize\ttfamily Logistic\+Classifier\+::\+Logistic\+Classifier (\begin{DoxyParamCaption}\item[{mat}]{X,  }\item[{mat}]{Y,  }\item[{double}]{alpha,  }\item[{double}]{thresh = {\ttfamily 0.06},  }\item[{int}]{num\+\_\+iter = {\ttfamily 300000} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & is the input\+\_\+x matrix (feature values in a row) \\
+\hline
+{\em Y} & is the input\+\_\+y matrix (actual out for the input row) \\
+\hline
+{\em alpha} & is the learning rate \\
+\hline
+{\em thresh} & is the parameter to check the convergence of weights \\
+\hline
+{\em num\+\_\+iter} & is the maximum number of iterations while training \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogisticClassifier_a77c2b290fe81dbbcf4f34c4ca3568681}\label{classLogisticClassifier_a77c2b290fe81dbbcf4f34c4ca3568681}} 
+\index{Logistic\+Classifier@{Logistic\+Classifier}!train@{train}}
+\index{train@{train}!Logistic\+Classifier@{Logistic\+Classifier}}
+\subsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void Logistic\+Classifier\+::train (\begin{DoxyParamCaption}\item[{float}]{ttr = {\ttfamily 0.75} }\end{DoxyParamCaption})}
+
+
+
+Train the A\+NN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttr} & is the Train\+:Test ratio \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Logistic\+Classifier.\+h\item 
+Logistic\+Classifier.\+cpp\end{DoxyCompactItemize}

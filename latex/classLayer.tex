@@ -1,0 +1,80 @@
+\hypertarget{classLayer}{}\section{Layer Class Reference}
+\label{classLayer}\index{Layer@{Layer}}
+
+
+A Class for layers of the \hyperlink{classNeuralNetwork}{Neural\+Network}.  
+
+
+
+
+{\ttfamily \#include $<$Neural\+Network.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLayer_ad4c9c9473c914874e42b16adf59f9d57}{Layer} (int nu, char t=\textquotesingle{}o\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Constructor for the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLayer_a41d708b318fe78976dcd7d16811aab00}\label{classLayer_a41d708b318fe78976dcd7d16811aab00}} 
+void \hyperlink{classLayer_a41d708b318fe78976dcd7d16811aab00}{refresh\+Layer} ()
+\begin{DoxyCompactList}\small\item\em Reset all activations(except bias) and deltas to zero. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLayer_aaf80bd74a6c446bd7474a771ba12c474}\label{classLayer_aaf80bd74a6c446bd7474a771ba12c474}} 
+mat \hyperlink{classLayer_aaf80bd74a6c446bd7474a771ba12c474}{soft\+Max} ()
+\begin{DoxyCompactList}\small\item\em Gives propbability of occurence of a class (Returns a matrix) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLayer_a3a5f01e9bfb805b9eb3f28948faa10d6}\label{classLayer_a3a5f01e9bfb805b9eb3f28948faa10d6}} 
+mat \hyperlink{classLayer_a3a5f01e9bfb805b9eb3f28948faa10d6}{one\+Hot} ()
+\begin{DoxyCompactList}\small\item\em Sets most probable class to one and the rest to zero (Returns a matrix) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLayer_a2279fa161683004244a189093d7c09f4}\label{classLayer_a2279fa161683004244a189093d7c09f4}} 
+int \hyperlink{classLayer_a2279fa161683004244a189093d7c09f4}{num\+\_\+units}
+\begin{DoxyCompactList}\small\item\em Number of units of the \hyperlink{classLayer}{Layer}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLayer_a61ddf5cdb9881f7d6f170a5d2721e30d}\label{classLayer_a61ddf5cdb9881f7d6f170a5d2721e30d}} 
+char \hyperlink{classLayer_a61ddf5cdb9881f7d6f170a5d2721e30d}{type}
+\begin{DoxyCompactList}\small\item\em Type of the \hyperlink{classLayer}{Layer}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLayer_a3d46008ff3feae925ae4479748e72b03}\label{classLayer_a3d46008ff3feae925ae4479748e72b03}} 
+mat \hyperlink{classLayer_a3d46008ff3feae925ae4479748e72b03}{activations}
+\begin{DoxyCompactList}\small\item\em activations of all units in the \hyperlink{classLayer}{Layer}. (Sigmoid for all layers except input) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLayer_a59ad459ce8c31af94a391062c2caff90}\label{classLayer_a59ad459ce8c31af94a391062c2caff90}} 
+mat \hyperlink{classLayer_a59ad459ce8c31af94a391062c2caff90}{weights}
+\begin{DoxyCompactList}\small\item\em weights from all units of current layer to those of next \hyperlink{classLayer}{Layer} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLayer_a51663bdfcd8b89bb8e368af005105db2}\label{classLayer_a51663bdfcd8b89bb8e368af005105db2}} 
+mat \hyperlink{classLayer_a51663bdfcd8b89bb8e368af005105db2}{deltas}
+\begin{DoxyCompactList}\small\item\em Delta values for all units(except bias) in \hyperlink{classLayer}{Layer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Class for layers of the \hyperlink{classNeuralNetwork}{Neural\+Network}. 
+
+Each layer has number of units that have their own activations and deltas(error term).
+
+A layer can be outer(input/ouput) or a hidden layer. The input layer has a bias unit assigned by the network. The output layer needs no bias unit. The hidden layers have a bias unit by default. This means that if we set a the number of units of a hidden layer to be 5 then the 5th unit is going to be bias unit.
+
+A layer has multiple weights from all its units to the all units(except bias) of the next layer.
+
+The layer class also supports functions like \hyperlink{classLayer_a3a5f01e9bfb805b9eb3f28948faa10d6}{one\+Hot()} and \hyperlink{classLayer_aaf80bd74a6c446bd7474a771ba12c474}{soft\+Max()} for better representations of the output. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLayer_ad4c9c9473c914874e42b16adf59f9d57}\label{classLayer_ad4c9c9473c914874e42b16adf59f9d57}} 
+\index{Layer@{Layer}!Layer@{Layer}}
+\index{Layer@{Layer}!Layer@{Layer}}
+\subsubsection{\texorpdfstring{Layer()}{Layer()}}
+{\footnotesize\ttfamily Layer\+::\+Layer (\begin{DoxyParamCaption}\item[{int}]{nu,  }\item[{char}]{t = {\ttfamily \textquotesingle{}o\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & is the number of units in the \hyperlink{classLayer}{Layer} \\
+\hline
+{\em t} & is the type of the \hyperlink{classLayer}{Layer},\textquotesingle{}o\textquotesingle{} is for an input/output layer and \textquotesingle{}h\textquotesingle{} is for a hidden layer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Neural\+Network.\+h\item 
+Neural\+Network.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{classNeuralNetwork}{}\section{Neural\+Network Class Reference}
+\label{classNeuralNetwork}\index{Neural\+Network@{Neural\+Network}}
+
+
+A class for the Neural Network.  
+
+
+
+
+{\ttfamily \#include $<$Neural\+Network.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNeuralNetwork_a2e6c1d53b25f32ab7b86f5724fda034e}{Neural\+Network} (mat X, mat Y, double alpha, int num\+\_\+iter=30000)
+\begin{DoxyCompactList}\small\item\em Constructor for the class. \end{DoxyCompactList}\item 
+void \hyperlink{classNeuralNetwork_a0f31b5c177741a64477f110724bf2eb7}{train} (float ttr=0.\+75)
+\begin{DoxyCompactList}\small\item\em Train the A\+NN. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_afcef9bd92f4ba54ef9e6fad40055a825}\label{classNeuralNetwork_afcef9bd92f4ba54ef9e6fad40055a825}} 
+void \hyperlink{classNeuralNetwork_afcef9bd92f4ba54ef9e6fad40055a825}{test} ()
+\begin{DoxyCompactList}\small\item\em Test the A\+NN on the test data as per Train\+:Test ratio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_acc188d528a0c4763512be978e8be78bd}\label{classNeuralNetwork_acc188d528a0c4763512be978e8be78bd}} 
+mat \hyperlink{classNeuralNetwork_acc188d528a0c4763512be978e8be78bd}{simulate} (mat X)
+\begin{DoxyCompactList}\small\item\em Get the most probable class(one hot matrix) for an input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a7823498a83db91a5bd6ef211d50a0013}\label{classNeuralNetwork_a7823498a83db91a5bd6ef211d50a0013}} 
+void \hyperlink{classNeuralNetwork_a7823498a83db91a5bd6ef211d50a0013}{set\+InputX} (mat X)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a233c54f713c7ab4487039a362fbf4447}\label{classNeuralNetwork_a233c54f713c7ab4487039a362fbf4447}} 
+void \hyperlink{classNeuralNetwork_a233c54f713c7ab4487039a362fbf4447}{set\+InputY} (mat Y)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_aa4f8d543148cde6aea8582c877f2ef94}\label{classNeuralNetwork_aa4f8d543148cde6aea8582c877f2ef94}} 
+void \hyperlink{classNeuralNetwork_aa4f8d543148cde6aea8582c877f2ef94}{set\+Rate} (double alpha)
+\begin{DoxyCompactList}\small\item\em setter for learning rate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a9b6580600f4c3b98a3103940992f3dfd}\label{classNeuralNetwork_a9b6580600f4c3b98a3103940992f3dfd}} 
+void \hyperlink{classNeuralNetwork_a9b6580600f4c3b98a3103940992f3dfd}{set\+Iterations} (int num\+\_\+iter)
+\begin{DoxyCompactList}\small\item\em setter for number of iterations \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_aac6bf64c05efc91b9575b2d26768f8b6}\label{classNeuralNetwork_aac6bf64c05efc91b9575b2d26768f8b6}} 
+void \hyperlink{classNeuralNetwork_aac6bf64c05efc91b9575b2d26768f8b6}{add\+Layer} (int num\+\_\+units, char t)
+\begin{DoxyCompactList}\small\item\em Add a \hyperlink{classLayer}{Layer} with num\+\_\+units units and of type t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_ad9be2fc1e0eb3000ca8cdddd9be2fcef}\label{classNeuralNetwork_ad9be2fc1e0eb3000ca8cdddd9be2fcef}} 
+mat \hyperlink{classNeuralNetwork_ad9be2fc1e0eb3000ca8cdddd9be2fcef}{get\+InputX} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a969d56a444d52fd6ef79abb2a6b7fc32}\label{classNeuralNetwork_a969d56a444d52fd6ef79abb2a6b7fc32}} 
+mat \hyperlink{classNeuralNetwork_a969d56a444d52fd6ef79abb2a6b7fc32}{get\+InputY} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_ab6245492f1f25d61e095e5f990fddb4f}\label{classNeuralNetwork_ab6245492f1f25d61e095e5f990fddb4f}} 
+double \hyperlink{classNeuralNetwork_ab6245492f1f25d61e095e5f990fddb4f}{get\+Rate} ()
+\begin{DoxyCompactList}\small\item\em getter for learning rate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a6acffd8b04107e05f9550ba05fbb1e4d}\label{classNeuralNetwork_a6acffd8b04107e05f9550ba05fbb1e4d}} 
+int \hyperlink{classNeuralNetwork_a6acffd8b04107e05f9550ba05fbb1e4d}{get\+Iterations} ()
+\begin{DoxyCompactList}\small\item\em getter for number of iterations \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNeuralNetwork_a588b6c78bde22fed1435ca9c599f64cf}\label{classNeuralNetwork_a588b6c78bde22fed1435ca9c599f64cf}} 
+mat \hyperlink{classNeuralNetwork_a588b6c78bde22fed1435ca9c599f64cf}{add\+Const\+Col} (mat X)
+\begin{DoxyCompactList}\small\item\em adds a bias column(of ones) to all rows of input \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a6ea041b895ae869eadadfa1ab0d22338}\label{classNeuralNetwork_a6ea041b895ae869eadadfa1ab0d22338}} 
+void \hyperlink{classNeuralNetwork_a6ea041b895ae869eadadfa1ab0d22338}{init\+Weights} ()
+\begin{DoxyCompactList}\small\item\em random initialization of wei \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_ad3a5dc5714a1d13fd03248c358b4200e}\label{classNeuralNetwork_ad3a5dc5714a1d13fd03248c358b4200e}} 
+void \hyperlink{classNeuralNetwork_ad3a5dc5714a1d13fd03248c358b4200e}{refresh\+Network} ()
+\begin{DoxyCompactList}\small\item\em refreshes all layers of the network \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_ab61fc301b2587012e3f8bd1e8a244d30}\label{classNeuralNetwork_ab61fc301b2587012e3f8bd1e8a244d30}} 
+void \hyperlink{classNeuralNetwork_ab61fc301b2587012e3f8bd1e8a244d30}{feed\+Forward} ()
+\begin{DoxyCompactList}\small\item\em Feed-\/forward. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a74fbc6e9431722bd5f9d9795b41cf105}\label{classNeuralNetwork_a74fbc6e9431722bd5f9d9795b41cf105}} 
+void \hyperlink{classNeuralNetwork_a74fbc6e9431722bd5f9d9795b41cf105}{back\+Propagate} ()
+\begin{DoxyCompactList}\small\item\em Backpropagation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNeuralNetwork_a2ecd9a7dc7ad526ab1518c457f8b16fa}\label{classNeuralNetwork_a2ecd9a7dc7ad526ab1518c457f8b16fa}} 
+mat \hyperlink{classNeuralNetwork_a2ecd9a7dc7ad526ab1518c457f8b16fa}{input\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Feature values of dataset. Each row represnts a training example. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a29b1c821b70b19179e055205d10b57dc}\label{classNeuralNetwork_a29b1c821b70b19179e055205d10b57dc}} 
+mat \hyperlink{classNeuralNetwork_a29b1c821b70b19179e055205d10b57dc}{input\+\_\+y}
+\begin{DoxyCompactList}\small\item\em Output values(one hot) of dataset. Each row represnts a training example. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a93208b94c9b084edc76ccaf8ac7e591f}\label{classNeuralNetwork_a93208b94c9b084edc76ccaf8ac7e591f}} 
+mat \hyperlink{classNeuralNetwork_a93208b94c9b084edc76ccaf8ac7e591f}{target}
+\begin{DoxyCompactList}\small\item\em Target output for a row of input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a064623c710a18b6736aa799fca74fd82}\label{classNeuralNetwork_a064623c710a18b6736aa799fca74fd82}} 
+vector$<$ \hyperlink{classLayer}{Layer} $>$ \hyperlink{classNeuralNetwork_a064623c710a18b6736aa799fca74fd82}{layers}
+\begin{DoxyCompactList}\small\item\em Vector of layers in the Network(1st Layer is input and last layer is output) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a32cddadde136ac9c43b7b738c33c9c2b}\label{classNeuralNetwork_a32cddadde136ac9c43b7b738c33c9c2b}} 
+double \hyperlink{classNeuralNetwork_a32cddadde136ac9c43b7b738c33c9c2b}{rate}
+\begin{DoxyCompactList}\small\item\em Learning rate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_af7bf7934f5e401b8d3003ea0fad86aa8}\label{classNeuralNetwork_af7bf7934f5e401b8d3003ea0fad86aa8}} 
+int \hyperlink{classNeuralNetwork_af7bf7934f5e401b8d3003ea0fad86aa8}{max\+\_\+iterations}
+\begin{DoxyCompactList}\small\item\em Maximum number of iterations while training. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeuralNetwork_a684adf6f34b5847e8226edd419132dd4}\label{classNeuralNetwork_a684adf6f34b5847e8226edd419132dd4}} 
+float \hyperlink{classNeuralNetwork_a684adf6f34b5847e8226edd419132dd4}{T\+TR}
+\begin{DoxyCompactList}\small\item\em Train\+:Test ratio to split dataset into training and test set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for the Neural Network. 
+
+Neural Network implementation as per \char`\"{}\+Chapter 4\+: Artificial Neural Network\char`\"{} in the book \char`\"{}\+Machine Learning\char`\"{} by \char`\"{}\+Tom M. Mitchell\char`\"{}.
+
+A neural network here is implemented by using multiple layers as defined in the \hyperlink{classLayer}{Layer} class. It takes in as input two matrices. X which has all features of an example in a row and Y which has one-\/hot representation of the classes in a row (check Examples) .
+
+The trained A\+NN can be used to get the possible activations for each class when fed an input row of feature values. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNeuralNetwork_a2e6c1d53b25f32ab7b86f5724fda034e}\label{classNeuralNetwork_a2e6c1d53b25f32ab7b86f5724fda034e}} 
+\index{Neural\+Network@{Neural\+Network}!Neural\+Network@{Neural\+Network}}
+\index{Neural\+Network@{Neural\+Network}!Neural\+Network@{Neural\+Network}}
+\subsubsection{\texorpdfstring{Neural\+Network()}{NeuralNetwork()}}
+{\footnotesize\ttfamily Neural\+Network\+::\+Neural\+Network (\begin{DoxyParamCaption}\item[{mat}]{X,  }\item[{mat}]{Y,  }\item[{double}]{alpha,  }\item[{int}]{num\+\_\+iter = {\ttfamily 30000} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & is the input\+\_\+x matrix (feature values in a row) \\
+\hline
+{\em Y} & is the input\+\_\+y matrix (one hot classes in a row) \\
+\hline
+{\em alpha} & is the learning rate \\
+\hline
+{\em num\+\_\+iter} & is the maximum number of iterations while training \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNeuralNetwork_a0f31b5c177741a64477f110724bf2eb7}\label{classNeuralNetwork_a0f31b5c177741a64477f110724bf2eb7}} 
+\index{Neural\+Network@{Neural\+Network}!train@{train}}
+\index{train@{train}!Neural\+Network@{Neural\+Network}}
+\subsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void Neural\+Network\+::train (\begin{DoxyParamCaption}\item[{float}]{ttr = {\ttfamily 0.75} }\end{DoxyParamCaption})}
+
+
+
+Train the A\+NN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttr} & is the Train\+:Test ratio \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Neural\+Network.\+h\item 
+Neural\+Network.\+cpp\end{DoxyCompactItemize}

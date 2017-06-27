@@ -1,0 +1,151 @@
+\hypertarget{classLinearClassifier}{}\section{Linear\+Classifier Class Reference}
+\label{classLinearClassifier}\index{Linear\+Classifier@{Linear\+Classifier}}
+
+
+A Class for Linear Regression.  
+
+
+
+
+{\ttfamily \#include $<$Linear\+Classifier.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLinearClassifier_a840feb0a19e17e7210796e5e8cd68d2b}{Linear\+Classifier} (mat X, mat Y, double alpha, double thresh=0.\+06, int num\+\_\+iter=300000)
+\begin{DoxyCompactList}\small\item\em Constructor for the class. \end{DoxyCompactList}\item 
+void \hyperlink{classLinearClassifier_a646b303b1eb86af2fb94a18b18ea8334}{train} (float ttr=0.\+75)
+\begin{DoxyCompactList}\small\item\em Train the A\+NN. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a530a87fc184081f522d0c4ffc28df0b0}\label{classLinearClassifier_a530a87fc184081f522d0c4ffc28df0b0}} 
+void \hyperlink{classLinearClassifier_a530a87fc184081f522d0c4ffc28df0b0}{test} ()
+\begin{DoxyCompactList}\small\item\em Test the A\+NN on the test data as per Train\+:Test ratio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a33cbc3e353e3e0a7412990ad1740264d}\label{classLinearClassifier_a33cbc3e353e3e0a7412990ad1740264d}} 
+mat \hyperlink{classLinearClassifier_a33cbc3e353e3e0a7412990ad1740264d}{simulate} (mat X)
+\begin{DoxyCompactList}\small\item\em Predict output value for a new row of input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a40b85fefcdf6b4ed868aa261c781d62a}\label{classLinearClassifier_a40b85fefcdf6b4ed868aa261c781d62a}} 
+void \hyperlink{classLinearClassifier_a40b85fefcdf6b4ed868aa261c781d62a}{set\+InputX} (mat X)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_ac38347aa7b071a97262893c583943b2d}\label{classLinearClassifier_ac38347aa7b071a97262893c583943b2d}} 
+void \hyperlink{classLinearClassifier_ac38347aa7b071a97262893c583943b2d}{set\+InputY} (mat Y)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a8da71208398a756adf2ca7284aa0de60}\label{classLinearClassifier_a8da71208398a756adf2ca7284aa0de60}} 
+void \hyperlink{classLinearClassifier_a8da71208398a756adf2ca7284aa0de60}{set\+Params} (mat B)
+\begin{DoxyCompactList}\small\item\em setter for params(weights) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a259f6903a8cf06d4693ed566346a7f08}\label{classLinearClassifier_a259f6903a8cf06d4693ed566346a7f08}} 
+void \hyperlink{classLinearClassifier_a259f6903a8cf06d4693ed566346a7f08}{set\+Rate} (double alpha)
+\begin{DoxyCompactList}\small\item\em setter for learning rate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_ab991baff123e59bf0132b9dd10d1e7e8}\label{classLinearClassifier_ab991baff123e59bf0132b9dd10d1e7e8}} 
+void \hyperlink{classLinearClassifier_ab991baff123e59bf0132b9dd10d1e7e8}{set\+Convergence} (double thresh)
+\begin{DoxyCompactList}\small\item\em setter for convergence threshold of weights \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a4e327faec4a7be802ba6120ac475cda4}\label{classLinearClassifier_a4e327faec4a7be802ba6120ac475cda4}} 
+void \hyperlink{classLinearClassifier_a4e327faec4a7be802ba6120ac475cda4}{set\+Iterations} (int num\+\_\+iter)
+\begin{DoxyCompactList}\small\item\em setter for max number of iterations \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_ad772e781dad3ac4108548e10b85e1692}\label{classLinearClassifier_ad772e781dad3ac4108548e10b85e1692}} 
+mat \hyperlink{classLinearClassifier_ad772e781dad3ac4108548e10b85e1692}{get\+InputX} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a7cd57027894a763c07264d5d82041de1}\label{classLinearClassifier_a7cd57027894a763c07264d5d82041de1}} 
+mat \hyperlink{classLinearClassifier_a7cd57027894a763c07264d5d82041de1}{get\+InputY} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_aad6a77dfb05906ed70cbca7cdc171d27}\label{classLinearClassifier_aad6a77dfb05906ed70cbca7cdc171d27}} 
+mat \hyperlink{classLinearClassifier_aad6a77dfb05906ed70cbca7cdc171d27}{get\+Params} ()
+\begin{DoxyCompactList}\small\item\em getter for weights \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a88207ade8af18464cc487a3e6afbadef}\label{classLinearClassifier_a88207ade8af18464cc487a3e6afbadef}} 
+double \hyperlink{classLinearClassifier_a88207ade8af18464cc487a3e6afbadef}{get\+Rate} ()
+\begin{DoxyCompactList}\small\item\em getter for learning rate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_aaebb686c5fb5024f4f7770634c53b853}\label{classLinearClassifier_aaebb686c5fb5024f4f7770634c53b853}} 
+double \hyperlink{classLinearClassifier_aaebb686c5fb5024f4f7770634c53b853}{get\+Convergence} ()
+\begin{DoxyCompactList}\small\item\em getter for convergence threshold \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a893d856be7d2bf13e15ef828cdd406ac}\label{classLinearClassifier_a893d856be7d2bf13e15ef828cdd406ac}} 
+int \hyperlink{classLinearClassifier_a893d856be7d2bf13e15ef828cdd406ac}{get\+Iterations} ()
+\begin{DoxyCompactList}\small\item\em getter for max number of iterations \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLinearClassifier_a1f6483538d5096759af9716f04f66091}\label{classLinearClassifier_a1f6483538d5096759af9716f04f66091}} 
+mat \hyperlink{classLinearClassifier_a1f6483538d5096759af9716f04f66091}{add\+Const\+Col} (mat X)
+\begin{DoxyCompactList}\small\item\em adds a bias column(of ones) to all rows of input \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a5fe43dd6d56439cf4054e70dc5be045a}\label{classLinearClassifier_a5fe43dd6d56439cf4054e70dc5be045a}} 
+double \hyperlink{classLinearClassifier_a5fe43dd6d56439cf4054e70dc5be045a}{hypo} (int i)
+\begin{DoxyCompactList}\small\item\em Hypothesis Function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a9996154d71ca96b03b7eb24aa606a377}\label{classLinearClassifier_a9996154d71ca96b03b7eb24aa606a377}} 
+void \hyperlink{classLinearClassifier_a9996154d71ca96b03b7eb24aa606a377}{gradient\+Descent} ()
+\begin{DoxyCompactList}\small\item\em Gradient Descent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLinearClassifier_aef5c644b35ada9f157961677a68f5342}\label{classLinearClassifier_aef5c644b35ada9f157961677a68f5342}} 
+mat \hyperlink{classLinearClassifier_aef5c644b35ada9f157961677a68f5342}{input\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Feature values of dataset. Each row represnts a training example. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a48d9263d2b78c7e437f3ef4b4fccd5b5}\label{classLinearClassifier_a48d9263d2b78c7e437f3ef4b4fccd5b5}} 
+mat \hyperlink{classLinearClassifier_a48d9263d2b78c7e437f3ef4b4fccd5b5}{input\+\_\+y}
+\begin{DoxyCompactList}\small\item\em Output values of dataset. Each row represnts a training example. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_aa22e60a5adffc93fb4519dcb07a201d9}\label{classLinearClassifier_aa22e60a5adffc93fb4519dcb07a201d9}} 
+mat \hyperlink{classLinearClassifier_aa22e60a5adffc93fb4519dcb07a201d9}{params}
+\begin{DoxyCompactList}\small\item\em Row vector of weights from all features to output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a15f1e976794a2e06c5eb2aff8e67cd48}\label{classLinearClassifier_a15f1e976794a2e06c5eb2aff8e67cd48}} 
+double \hyperlink{classLinearClassifier_a15f1e976794a2e06c5eb2aff8e67cd48}{rate}
+\begin{DoxyCompactList}\small\item\em Learning rate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a05eab9e5f3b75d7220c9bf6e547baebd}\label{classLinearClassifier_a05eab9e5f3b75d7220c9bf6e547baebd}} 
+double \hyperlink{classLinearClassifier_a05eab9e5f3b75d7220c9bf6e547baebd}{convergence}
+\begin{DoxyCompactList}\small\item\em Convergence threshold for weights. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a033a4e3303991899df2de2e5578f4bfc}\label{classLinearClassifier_a033a4e3303991899df2de2e5578f4bfc}} 
+int \hyperlink{classLinearClassifier_a033a4e3303991899df2de2e5578f4bfc}{max\+\_\+iterations}
+\begin{DoxyCompactList}\small\item\em Maximum number of iterations while training. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLinearClassifier_a8466d8d873a34ffa84f8eb22b07c3394}\label{classLinearClassifier_a8466d8d873a34ffa84f8eb22b07c3394}} 
+float \hyperlink{classLinearClassifier_a8466d8d873a34ffa84f8eb22b07c3394}{T\+TR}
+\begin{DoxyCompactList}\small\item\em Train\+:Test ratio to split dataset into training and test set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Class for Linear Regression. 
+
+Output is a linear weighted combination of parameters. The process is terminated on convergence of weights or after a fixed number of iterations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLinearClassifier_a840feb0a19e17e7210796e5e8cd68d2b}\label{classLinearClassifier_a840feb0a19e17e7210796e5e8cd68d2b}} 
+\index{Linear\+Classifier@{Linear\+Classifier}!Linear\+Classifier@{Linear\+Classifier}}
+\index{Linear\+Classifier@{Linear\+Classifier}!Linear\+Classifier@{Linear\+Classifier}}
+\subsubsection{\texorpdfstring{Linear\+Classifier()}{LinearClassifier()}}
+{\footnotesize\ttfamily Linear\+Classifier\+::\+Linear\+Classifier (\begin{DoxyParamCaption}\item[{mat}]{X,  }\item[{mat}]{Y,  }\item[{double}]{alpha,  }\item[{double}]{thresh = {\ttfamily 0.06},  }\item[{int}]{num\+\_\+iter = {\ttfamily 300000} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & is the input\+\_\+x matrix (feature values in a row) \\
+\hline
+{\em Y} & is the input\+\_\+y matrix (actual out for the input row) \\
+\hline
+{\em alpha} & is the learning rate \\
+\hline
+{\em thresh} & is the parameter to check the convergence of weights \\
+\hline
+{\em num\+\_\+iter} & is the maximum number of iterations while training \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLinearClassifier_a646b303b1eb86af2fb94a18b18ea8334}\label{classLinearClassifier_a646b303b1eb86af2fb94a18b18ea8334}} 
+\index{Linear\+Classifier@{Linear\+Classifier}!train@{train}}
+\index{train@{train}!Linear\+Classifier@{Linear\+Classifier}}
+\subsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void Linear\+Classifier\+::train (\begin{DoxyParamCaption}\item[{float}]{ttr = {\ttfamily 0.75} }\end{DoxyParamCaption})}
+
+
+
+Train the A\+NN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttr} & is the Train\+:Test ratio \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Linear\+Classifier.\+h\item 
+Linear\+Classifier.\+cpp\end{DoxyCompactItemize}

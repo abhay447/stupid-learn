@@ -1,0 +1,113 @@
+\hypertarget{classKMClassifier}{}\section{K\+M\+Classifier Class Reference}
+\label{classKMClassifier}\index{K\+M\+Classifier@{K\+M\+Classifier}}
+
+
+A class for K-\/\+Means Classifier We begin by choosing random class centroids in the dataset.  
+
+
+
+
+{\ttfamily \#include $<$K\+M\+Classifier.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKMClassifier_a5dbb59060646ab3dd794cc2f24c5d6c5}{K\+M\+Classifier} (mat X, int nc, int num\+\_\+iter, int rand\+\_\+seed)
+\begin{DoxyCompactList}\small\item\em Constructor for the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_add340f75c2f172817dd697416df7a951}\label{classKMClassifier_add340f75c2f172817dd697416df7a951}} 
+void \hyperlink{classKMClassifier_add340f75c2f172817dd697416df7a951}{set\+InputX} (mat X)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a6f8ec04c99bc74ce41ed5773190626e6}\label{classKMClassifier_a6f8ec04c99bc74ce41ed5773190626e6}} 
+mat \hyperlink{classKMClassifier_a6f8ec04c99bc74ce41ed5773190626e6}{get\+InputX} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a7e240d4fe5cb68b6271b9ec4eba6520f}\label{classKMClassifier_a7e240d4fe5cb68b6271b9ec4eba6520f}} 
+void \hyperlink{classKMClassifier_a7e240d4fe5cb68b6271b9ec4eba6520f}{classify} ()
+\begin{DoxyCompactList}\small\item\em Function to start the iterative classification process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKMClassifier_a046cf5cafacf50f621969042830ebccc}\label{classKMClassifier_a046cf5cafacf50f621969042830ebccc}} 
+mat \hyperlink{classKMClassifier_a046cf5cafacf50f621969042830ebccc}{input\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Input matrix for the dataset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a4abdb99ad18d92da4ee79ca95b8484e0}\label{classKMClassifier_a4abdb99ad18d92da4ee79ca95b8484e0}} 
+int \hyperlink{classKMClassifier_a4abdb99ad18d92da4ee79ca95b8484e0}{max\+\_\+iterations}
+\begin{DoxyCompactList}\small\item\em Max number of iterations of the algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a7fbe0e57ba8330693dfa9c5a0beb4a9c}\label{classKMClassifier_a7fbe0e57ba8330693dfa9c5a0beb4a9c}} 
+int \hyperlink{classKMClassifier_a7fbe0e57ba8330693dfa9c5a0beb4a9c}{num\+\_\+clusters}
+\begin{DoxyCompactList}\small\item\em Number of clusters to classify data into. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_af2b1c8cb2dca371adf96fd025f12ec97}\label{classKMClassifier_af2b1c8cb2dca371adf96fd025f12ec97}} 
+int \hyperlink{classKMClassifier_af2b1c8cb2dca371adf96fd025f12ec97}{seed}
+\begin{DoxyCompactList}\small\item\em Seed for randomly choosing cluster centroids in the begining. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a56f71bae126e5e8ecb5fb62d2428f799}\label{classKMClassifier_a56f71bae126e5e8ecb5fb62d2428f799}} 
+mat \hyperlink{classKMClassifier_a56f71bae126e5e8ecb5fb62d2428f799}{cluster\+\_\+centroids}
+\begin{DoxyCompactList}\small\item\em Each row represnts the centroid location of a class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a63a2f43c9ae76ed02708fd003ade29ef}\label{classKMClassifier_a63a2f43c9ae76ed02708fd003ade29ef}} 
+vector$<$ int $>$ \hyperlink{classKMClassifier_a63a2f43c9ae76ed02708fd003ade29ef}{cluster\+\_\+points}
+\begin{DoxyCompactList}\small\item\em ith entry represents the class assigned to the ith point in dataset \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_ae5ff4fcca2d28dd3ad353cf07d1c8f95}\label{classKMClassifier_ae5ff4fcca2d28dd3ad353cf07d1c8f95}} 
+double \hyperlink{classKMClassifier_ae5ff4fcca2d28dd3ad353cf07d1c8f95}{cost}
+\begin{DoxyCompactList}\small\item\em Sum of distance of all datapoints from assigned centroids. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKMClassifier_afd8966241632351a9d691a9c231eab8e}\label{classKMClassifier_afd8966241632351a9d691a9c231eab8e}} 
+void \hyperlink{classKMClassifier_afd8966241632351a9d691a9c231eab8e}{assign\+Class} ()
+\begin{DoxyCompactList}\small\item\em Assign a class to all datapoints based on proximity from centroids. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a37b8a890fe45e646791118899e2cbddf}\label{classKMClassifier_a37b8a890fe45e646791118899e2cbddf}} 
+void \hyperlink{classKMClassifier_a37b8a890fe45e646791118899e2cbddf}{move\+Centroids} ()
+\begin{DoxyCompactList}\small\item\em Move cluster centroids to new cluster mean. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_acead805cb0d025965fe334b6f2799cc3}\label{classKMClassifier_acead805cb0d025965fe334b6f2799cc3}} 
+void \hyperlink{classKMClassifier_acead805cb0d025965fe334b6f2799cc3}{calc\+Cost} ()
+\begin{DoxyCompactList}\small\item\em Calculate total cost due to current arrangement of clusters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_a91d2ea2aefdf7f33a95f7b8f1ca88961}\label{classKMClassifier_a91d2ea2aefdf7f33a95f7b8f1ca88961}} 
+void \hyperlink{classKMClassifier_a91d2ea2aefdf7f33a95f7b8f1ca88961}{rand\+Init} ()
+\begin{DoxyCompactList}\small\item\em random intialization of cluster centroids \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKMClassifier_a79f86197f23ebdb49be2dbfabade2415}\label{classKMClassifier_a79f86197f23ebdb49be2dbfabade2415}} 
+vector$<$ int $>$ \hyperlink{classKMClassifier_a79f86197f23ebdb49be2dbfabade2415}{cluster\+\_\+count}
+\begin{DoxyCompactList}\small\item\em Tracks number of datapoints in a cluster. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKMClassifier_aa03707990827cf22657c609cef40b0f6}\label{classKMClassifier_aa03707990827cf22657c609cef40b0f6}} 
+mat \hyperlink{classKMClassifier_aa03707990827cf22657c609cef40b0f6}{temp\+\_\+centroids}
+\begin{DoxyCompactList}\small\item\em Tracks the sum of all datapoints in a cluster.(Helps in shifting centroid) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for K-\/\+Means Classifier We begin by choosing random class centroids in the dataset. 
+
+
+\begin{DoxyItemize}
+\item Then every point in dataset is assigned a class(cluster) depending on its proximity to the nearest centroid.
+\item Then every class centroid is moved to the mean location of all points belonging to that class
+\item The whole process is iterated multiple times with hopes of convergence of centroids 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKMClassifier_a5dbb59060646ab3dd794cc2f24c5d6c5}\label{classKMClassifier_a5dbb59060646ab3dd794cc2f24c5d6c5}} 
+\index{K\+M\+Classifier@{K\+M\+Classifier}!K\+M\+Classifier@{K\+M\+Classifier}}
+\index{K\+M\+Classifier@{K\+M\+Classifier}!K\+M\+Classifier@{K\+M\+Classifier}}
+\subsubsection{\texorpdfstring{K\+M\+Classifier()}{KMClassifier()}}
+{\footnotesize\ttfamily K\+M\+Classifier\+::\+K\+M\+Classifier (\begin{DoxyParamCaption}\item[{mat}]{X,  }\item[{int}]{nc,  }\item[{int}]{num\+\_\+iter,  }\item[{int}]{rand\+\_\+seed }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & is the input\+\_\+x matrix (Dataset) \\
+\hline
+{\em nc} & is number of classes/clusters \\
+\hline
+{\em num\+\_\+iter} & is the number of max iterations \\
+\hline
+{\em rand\+\_\+seed} & is the random seed for a particular run of the experiment. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+K\+M\+Classifier.\+h\item 
+K\+M\+Classifier.\+cpp\end{DoxyCompactItemize}
