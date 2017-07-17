@@ -1,0 +1,106 @@
+\hypertarget{classKNNClassifier}{}\section{K\+N\+N\+Classifier Class Reference}
+\label{classKNNClassifier}\index{K\+N\+N\+Classifier@{K\+N\+N\+Classifier}}
+
+
+A class for K-\/\+Nearest-\/\+Neighbour Classifier.  
+
+
+
+
+{\ttfamily \#include $<$K\+N\+N\+Classifier.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKNNClassifier_aae3359bce60c002f41f3c585ca972d55}{K\+N\+N\+Classifier} (mat X, mat Y, int k)
+\begin{DoxyCompactList}\small\item\em Constructor for the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKNNClassifier_abb1a82a787cc5d358ef8e2056b62f01f}\label{classKNNClassifier_abb1a82a787cc5d358ef8e2056b62f01f}} 
+void \hyperlink{classKNNClassifier_abb1a82a787cc5d358ef8e2056b62f01f}{set\+InputX} (mat X)
+\begin{DoxyCompactList}\small\item\em setter for input\+\_\+x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKNNClassifier_a831cb983a8ce2e88976b4e03c42f7721}\label{classKNNClassifier_a831cb983a8ce2e88976b4e03c42f7721}} 
+mat \hyperlink{classKNNClassifier_a831cb983a8ce2e88976b4e03c42f7721}{get\+InputX} ()
+\begin{DoxyCompactList}\small\item\em getter for input\+\_\+x \end{DoxyCompactList}\item 
+mat \hyperlink{classKNNClassifier_a447fa4c73ba8e817063de2469ddd92d9}{classify} (mat instance, float ttr=0.\+75)
+\begin{DoxyCompactList}\small\item\em Classifies a single observation by looking at. \end{DoxyCompactList}\item 
+double \hyperlink{classKNNClassifier_ac270d2fa42936ae039b3ed9cde3e7ce5}{test} (float ttr=0.\+75)
+\begin{DoxyCompactList}\small\item\em Test the algorithm based on a Train-\/\+Test-\/\+Ratio =. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKNNClassifier_a493ac2acba58a77864219be5dc0e146c}\label{classKNNClassifier_a493ac2acba58a77864219be5dc0e146c}} 
+mat \hyperlink{classKNNClassifier_a493ac2acba58a77864219be5dc0e146c}{input\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Input matrix for the dataset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKNNClassifier_ac2ec746aab804e6e37de3485291bf551}\label{classKNNClassifier_ac2ec746aab804e6e37de3485291bf551}} 
+mat \hyperlink{classKNNClassifier_ac2ec746aab804e6e37de3485291bf551}{input\+\_\+y}
+\begin{DoxyCompactList}\small\item\em Output Values for dataset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKNNClassifier_a0142bac6dbbb66916fa9aacfdb36341c}\label{classKNNClassifier_a0142bac6dbbb66916fa9aacfdb36341c}} 
+int \hyperlink{classKNNClassifier_a0142bac6dbbb66916fa9aacfdb36341c}{num\+\_\+nbrs}
+\begin{DoxyCompactList}\small\item\em Number of nearest neighbours to be considered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for K-\/\+Nearest-\/\+Neighbour Classifier. 
+
+To classify any occurence we look at the K nearest points in the n-\/dimensional dataset and assign the occurence the class that is most common among all k neighbours.
+
+In our approach we use a priority-\/queue(PQ) of size k. While classifying a point p we scan through all points in training set. If the size of PQ is less than k or the distance of p from the scanned point is less than the that of the top point in PQ then we pop the top point from PQ and push the scanned point in PQ. This ensures the size of PQ to be less than k and that it contains k-\/nearest-\/neighbours only. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKNNClassifier_aae3359bce60c002f41f3c585ca972d55}\label{classKNNClassifier_aae3359bce60c002f41f3c585ca972d55}} 
+\index{K\+N\+N\+Classifier@{K\+N\+N\+Classifier}!K\+N\+N\+Classifier@{K\+N\+N\+Classifier}}
+\index{K\+N\+N\+Classifier@{K\+N\+N\+Classifier}!K\+N\+N\+Classifier@{K\+N\+N\+Classifier}}
+\subsubsection{\texorpdfstring{K\+N\+N\+Classifier()}{KNNClassifier()}}
+{\footnotesize\ttfamily K\+N\+N\+Classifier\+::\+K\+N\+N\+Classifier (\begin{DoxyParamCaption}\item[{mat}]{X,  }\item[{mat}]{Y,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & is the input\+\_\+x matrix (Dataset) \\
+\hline
+{\em Y} & is the observed output matrix (Dataset) \\
+\hline
+{\em k} & is the number of nearest neighbours to be considered \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKNNClassifier_a447fa4c73ba8e817063de2469ddd92d9}\label{classKNNClassifier_a447fa4c73ba8e817063de2469ddd92d9}} 
+\index{K\+N\+N\+Classifier@{K\+N\+N\+Classifier}!classify@{classify}}
+\index{classify@{classify}!K\+N\+N\+Classifier@{K\+N\+N\+Classifier}}
+\subsubsection{\texorpdfstring{classify()}{classify()}}
+{\footnotesize\ttfamily mat K\+N\+N\+Classifier\+::classify (\begin{DoxyParamCaption}\item[{mat}]{instance,  }\item[{float}]{ttr = {\ttfamily 0.75} }\end{DoxyParamCaption})}
+
+
+
+Classifies a single observation by looking at. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttr} & fraction of inputs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKNNClassifier_ac270d2fa42936ae039b3ed9cde3e7ce5}\label{classKNNClassifier_ac270d2fa42936ae039b3ed9cde3e7ce5}} 
+\index{K\+N\+N\+Classifier@{K\+N\+N\+Classifier}!test@{test}}
+\index{test@{test}!K\+N\+N\+Classifier@{K\+N\+N\+Classifier}}
+\subsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily double K\+N\+N\+Classifier\+::test (\begin{DoxyParamCaption}\item[{float}]{ttr = {\ttfamily 0.75} }\end{DoxyParamCaption})}
+
+
+
+Test the algorithm based on a Train-\/\+Test-\/\+Ratio =. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttr} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+K\+N\+N\+Classifier.\+h\item 
+K\+N\+N\+Classifier.\+cpp\end{DoxyCompactItemize}

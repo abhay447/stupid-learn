@@ -1,0 +1,58 @@
+\hypertarget{classPointDistance}{}\section{Point\+Distance Class Reference}
+\label{classPointDistance}\index{Point\+Distance@{Point\+Distance}}
+
+
+A class to keep track of distance of all points of dataset from another point in \hyperlink{classKNNClassifier}{K\+N\+N\+Classifier}.  
+
+
+
+
+{\ttfamily \#include $<$K\+N\+N\+Classifier.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPointDistance_a172c423156ae61947c4521f691aae41c}{Point\+Distance} (int i, double d)
+\begin{DoxyCompactList}\small\item\em Constructor for the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPointDistance_a601a484945b513defcf0025920752538}\label{classPointDistance_a601a484945b513defcf0025920752538}} 
+bool \hyperlink{classPointDistance_a601a484945b513defcf0025920752538}{operator$<$} (const \hyperlink{classPointDistance}{Point\+Distance} \&rhs) const
+\begin{DoxyCompactList}\small\item\em $<$ Comparison Function to sort the priority-\/queue based on distance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPointDistance_a784d7faf4d2fc1f8f53162f405da880a}\label{classPointDistance_a784d7faf4d2fc1f8f53162f405da880a}} 
+int \hyperlink{classPointDistance_a784d7faf4d2fc1f8f53162f405da880a}{index}
+\begin{DoxyCompactList}\small\item\em Index of scanned point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPointDistance_a07905cda86de2ae4b44fc7cea12a1a93}\label{classPointDistance_a07905cda86de2ae4b44fc7cea12a1a93}} 
+double \hyperlink{classPointDistance_a07905cda86de2ae4b44fc7cea12a1a93}{distance}
+\begin{DoxyCompactList}\small\item\em Distance of scanned point from point to be classified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to keep track of distance of all points of dataset from another point in \hyperlink{classKNNClassifier}{K\+N\+N\+Classifier}. 
+
+Every scanned point in the K\+NN algorithm is treated as an object of this class and then stored in a priority-\/queue(sorted on distance) if required. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPointDistance_a172c423156ae61947c4521f691aae41c}\label{classPointDistance_a172c423156ae61947c4521f691aae41c}} 
+\index{Point\+Distance@{Point\+Distance}!Point\+Distance@{Point\+Distance}}
+\index{Point\+Distance@{Point\+Distance}!Point\+Distance@{Point\+Distance}}
+\subsubsection{\texorpdfstring{Point\+Distance()}{PointDistance()}}
+{\footnotesize\ttfamily Point\+Distance\+::\+Point\+Distance (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & is the index of the scanned point \\
+\hline
+{\em d} & is the distance of scanned point from point to be classified \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+K\+N\+N\+Classifier.\+h\end{DoxyCompactItemize}
