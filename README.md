@@ -16,4 +16,4 @@ Please install [armadillo](http://arma.sourceforge.net/) before trying out any o
   
 ## Documentation
   - I have recently come across Doxygen as a documentation tool and have used it for the class documentation.
-  - You can start reading the documentation by opening the index.html file in the html/ folder.
+  - You can start reading the documentation here [Stupid-Learn-Documentation](https://abhay447.github.io/stupid-learn/html/index.html).
