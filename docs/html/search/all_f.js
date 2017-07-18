@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['stupid_2dlearn',['Stupid-Learn',['../md_README.html',1,'']]],
+  ['stupid_2dlearn',['Stupid-Learn',['../index.html',1,'']]],
   ['seed',['seed',['../classKMClassifier.html#af2b1c8cb2dca371adf96fd025f12ec97',1,'KMClassifier']]],
   ['setconvergence',['setConvergence',['../classLinearClassifier.html#ab991baff123e59bf0132b9dd10d1e7e8',1,'LinearClassifier::setConvergence()'],['../classLogisticClassifier.html#a6f40d57c448513ce1327b7b1654af801',1,'LogisticClassifier::setConvergence()']]],
   ['setinputx',['setInputX',['../classKMClassifier.html#add340f75c2f172817dd697416df7a951',1,'KMClassifier::setInputX()'],['../classKNNClassifier.html#abb1a82a787cc5d358ef8e2056b62f01f',1,'KNNClassifier::setInputX()'],['../classLinearClassifier.html#a40b85fefcdf6b4ed868aa261c781d62a',1,'LinearClassifier::setInputX()'],['../classLogisticClassifier.html#ab529f1b73d5274d0b5fdea648e2f98cc',1,'LogisticClassifier::setInputX()'],['../classNeuralNetwork.html#a7823498a83db91a5bd6ef211d50a0013',1,'NeuralNetwork::setInputX()']]],
